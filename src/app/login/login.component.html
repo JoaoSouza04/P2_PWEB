@@ -1,0 +1,43 @@
+<body>
+  <div class="conteudo">
+    <div class="tela-login">
+      <h1>Login</h1>
+      <label class="form-label">email:</label>
+      <input
+        [(ngModel)]="obj.email"
+        type="text"
+        id="nome"
+        placeholder="endereço de email"
+        size="50"
+        required
+        pattern="[A-z\s]{6,100}"
+        title="Informe somente letras"
+        class="form-control"
+        name="email"
+        [ngModelOptions]="{ standalone: true }"
+      />
+      <label class="form-label">senha:</label>
+      <input
+        [(ngModel)]="obj.senha"
+        type="password"
+        id="senha"
+        required
+        pattern="[A-z0-9]{6,30}"
+        class="form-control"
+        name="senha"
+        [ngModelOptions]="{ standalone: true }"
+      />
+      <a href="http://localhost:4200/cadastro">
+        <p class="pergunta primeiro_link">Não possui cadastro? Clique aqui!</p>
+      </a>
+      <a href="http://localhost:4200/esqueci">
+        <p class="pergunta">Esqueceu a senha? Clique aqui!</p>
+      </a>
+      <div class="botoes">
+        <a>
+          <button class="botao" (click)="fazerLogin()">Entrar</button>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>

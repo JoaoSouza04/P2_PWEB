@@ -1,0 +1,21 @@
+<body style="font-family: Comic Sans MS">
+  <div class="conteudo">
+  <h1>CARDÁPIO - MILKSHAKES</h1>
+    <div *ngFor="let produto of produtos">
+      <ul class="produtos">
+        <li class="cards">
+          <a href="http://localhost:4200/produto-detalhe/{{produto.codigo}}">
+            ><img
+              src="../../assets/imagens/milkshake{{produto.codigo}}.jpeg"
+              alt="Milkshake {{ produto.codigo }}"
+              class="milkshakes"
+            />
+          </a>
+          <h2>{{ produto.sabor }}</h2>
+          <p>{{ produto.tamanho }}</p>
+          <p>R${{ produto.preco }}</p>
+        </li>
+      </ul>
+    </div>
+</div>
+</body>

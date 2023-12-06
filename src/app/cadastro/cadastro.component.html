@@ -1,0 +1,63 @@
+<body>
+  <div class="conteudo">
+    <div class="tela-cadastro">
+      <h1>Cadastro</h1>
+      <br />
+      <label class="form-label">nome:</label>
+      <input
+        [(ngModel)]="obj.nome"
+        type="text"
+        id="nome"
+        placeholder="digite seu nome completo"
+        size="50"
+        required
+        pattern="[A-z\s]{6,100}"
+        title="Informe somente letras"
+        class="form-control"
+        name="nome"
+        [ngModelOptions]="{standalone: true}"
+      /><br />
+      <label class="form-label">email:</label>
+      <input
+      [(ngModel)]="obj.email"
+        type="email"
+        id="email"
+        placeholder="digite seu email"
+        size="60"
+        required
+        class="form-control"
+        name="email"
+        [ngModelOptions]="{standalone: true}"
+      /><br />
+      <label class="form-label">telefone:</label>
+      <input
+      [(ngModel)]="obj.telefone"
+        type="text"
+        id="telefone"
+        placeholder="digite seu telefone"
+        required
+        pattern="[0-9]{4,5}-[0-9]{4}"
+        class="form-control"
+        title="Informe no padrão 99999-9999"
+        name="telefone"
+        [ngModelOptions]="{standalone: true}"
+      /><br />
+      <label class="form-label"> senha:</label>
+      <input
+      [(ngModel)]="obj.senha"
+        type="password"
+        id="senha"
+        required
+        pattern="[A-z0-9]{6,30}"
+        class="form-control"
+        placeholder="Insira sua senha"
+        name="senha"
+        [ngModelOptions]="{standalone: true}"
+      /><br /><br />
+      <div class="botoes">
+        <button class="botao" (click)="gravar()">Cadastrar</button>
+        <p>{{ mensagem }}</p>
+      </div>
+    </div>
+  </div>
+</body>

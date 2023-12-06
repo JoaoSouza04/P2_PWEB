@@ -1,0 +1,59 @@
+.conteudo {
+  margin: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tela-cadastro {
+  margin-top: 2%;
+  margin-bottom: 5%;
+  width: 60%;
+  padding: 2%;
+  border-radius: 15px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #ffff;
+}
+
+h1, p {
+  padding: 1% 2% 2% 2%;
+}
+
+h1 {
+  text-align: center;
+}
+
+.botoes {
+  text-align: center;
+}
+
+.botao{
+  margin: 2% 0 2% 0;
+  background-color: rgb(250, 157, 227);
+  border: 1px solid rgb(250, 157, 227);
+  padding: 15px;
+  width: 30%;
+  border-radius: 10px;
+  color:white;
+  font-size: 20px;
+  transition: 500ms;
+}
+
+.botao:hover{
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: 500ms;
+  color: rgb(250, 157, 227);
+}
+
+label {
+  padding: 5px;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 800px) and (min-width: 0px){
+  .botao {
+    width: auto;
+    font-size: 80%;
+  }
+}

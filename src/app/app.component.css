@@ -1,0 +1,46 @@
+* {
+  padding:0;
+  margin:0;
+  vertical-align:baseline;
+  list-style:none;
+  border:0
+}
+
+.logotipo{
+  mix-blend-mode: multiply;
+  filter: brightness(170%);
+  width: 15%;
+  height: 15%;
+}
+
+.cabecalho {
+  display: inline-block;
+  align-items: center;
+  padding: 2%
+}
+
+a {
+  color: rgb(243, 188, 120);
+  font-weight: bold;
+}
+
+.campo_pesquisa {
+  padding: 3px;
+  border: 2px solid rgb(250, 157, 227)
+}
+
+.btn_pesquisa {
+  color: white;
+  background-color: rgb(250, 157, 227);
+  padding: 3px;
+}
+
+.btn_pesquisa:hover{
+  background-color: rgb(247, 58, 247);
+  cursor: pointer;
+  transition: 500ms;
+}
+
+footer {
+  text-align: center;
+}

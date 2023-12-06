@@ -1,0 +1,52 @@
+<body>
+  <div class="container border mx-auto d-block" style="margin: 50px">
+    <div class="row">
+      <div class="col-sm">
+        <h1>Cesta</h1>
+      </div>
+    </div>
+    <div class="col-sm">
+      <table class="table">
+        <thead>
+          <tr>
+            <th style="color: rgb(243, 188, 120)">Item</th>
+            <th style="color: rgb(243, 188, 120)">Qtd</th>
+            <th style="color: rgb(243, 188, 120)">Valor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let produto of produtos">
+            <td>{{ produto.sabor }}</td>
+            <td>{{ produto.quantidade }}</td>
+            <td>{{ produto.preco }}</td>
+          </tr>
+        </tbody>
+      </table>
+      <br /><br /><br /><br />
+      <h5 style="color: black; margin-left: 5%">
+        Total em produtos na cesta: R${{ total }},00
+      </h5>
+      <a href="http://localhost:4200/localizacao">
+        <button
+          class="botao"
+          type="button"
+          style="padding: 10px; margin-right: 4px; margin-bottom: 10px"
+          class="btn btn-success float-end"
+        >
+          Finalizar
+        </button>
+      </a>
+      <a href="http://localhost:4200/cesta">
+        <button
+          class="botao"
+          (click)="limparCarrinho()"
+          type="button"
+          style="padding: 10px; margin-right: 5px; margin-bottom: 10px"
+          class="btn btn-danger float-end"
+        >
+          Limpar
+        </button></a
+      ><br /><br />
+    </div>
+  </div>
+</body>

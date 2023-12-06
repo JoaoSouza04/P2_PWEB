@@ -1,0 +1,90 @@
+<nav
+  style="font-family: Comic Sans MS"
+  class="cabecalho navbar navbar-expand-lg bg-body-tertiary"
+>
+  <div class="container-fluid">
+    <img
+      class="logotipo"
+      src="https://img.freepik.com/vetores-premium/logotipo-do-sorvete_187482-475.jpg?w=2000"
+    />
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a
+            class="nav-link desactived"
+            aria-current="page"
+            href="http://localhost:4200/vitrine"
+            >HOME</a
+          >
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:4200/cesta">CARRINHO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:4200/produto-busca"
+            >BUSCA PRODUTO</a
+          >
+        </li>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            AUTENTICAÇÃO
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <a class="dropdown-item" href="http://localhost:4200/cadastro"
+                >CADASTRO</a
+              >
+            </li>
+            <li>
+              <a class="dropdown-item" href="http://localhost:4200/login"
+                >LOGIN</a
+              >
+            </li>
+            <li><hr class="dropdown-divider" /></li>
+            <li>
+              <a class="dropdown-item" href="http://localhost:4200/esqueci"
+                >ESQUECI A SENHA</a
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input
+          class="campo_pesquisa form-control me-2"
+          type="search"
+          placeholder="buscar produtos"
+          aria-label="Search"
+          [(ngModel)]="termoPesquisa"
+        />
+        <a href="http://localhost:4200/produto-busca">
+          <button class="btn_pesquisa btn" (click)="pesquisarProdutos()">Pesquisar</button>
+        </a>
+      </form>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>
+<footer>
+  <img
+    class="logotipo"
+    src="https://img.freepik.com/vetores-premium/logotipo-do-sorvete_187482-475.jpg?w=2000"
+  />
+</footer>

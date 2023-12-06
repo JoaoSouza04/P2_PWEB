@@ -1,0 +1,20 @@
+<body style="font-family: Comic Sans MS">
+  <div class="conteudo">
+    <div class="container border">
+      <div class="row">
+        <div class="col-sm">
+          <img class="milkshakes" src="../../assets/imagens/milkshake{{produto.codigo}}.jpeg" />
+        </div>
+        <div class="descricao col-sm">
+          <h3>Descrição - {{produto.sabor}}</h3>
+          <p>
+            {{produto.descricao}}
+          </p>
+          <a href="http://localhost:4200/cesta">
+            <button (click)="adicionarAoCarrinho()" type="button" class="botao btn btn-success">Comprar</button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

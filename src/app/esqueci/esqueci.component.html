@@ -1,0 +1,22 @@
+<body>
+  <div class="conteudo">
+    <div class="tela-esqueci">
+      <h1>Esqueci minha senha</h1>
+      <label class="form-label">email:</label>
+      <input
+        [(ngModel)]="obj.email"
+        type="email"
+        id="email"
+        placeholder="digite seu email"
+        size="60"
+        required
+        class="form-control"
+        name="email"
+        [ngModelOptions]="{ standalone: true }"
+      />
+      <div class="botoes">
+        <button class="botao" (click)="verificar()">Validar</button>
+      </div>
+    </div>
+  </div>
+</body>
